@@ -1,6 +1,10 @@
-# RC-MLLM
+<h1 style="text-align: center;">Region-Level Context-Aware Multimodal Understanding</h1>  
+
 **Arxiv**: [📑Region-Level Context-Aware Multimodal Understanding](https://arxiv.org/abs/2508.12263)  
 **Models**：[🤗RC-Qwen2VL-2b](https://huggingface.co/weihongliang/RC-Qwen2VL-2b/blob/main/README.md) | [🤗RC-Qwen2VL-7b](https://huggingface.co/weihongliang/RC-Qwen2VL-7b/blob/main/README.md)  
-[📁数据集](https://huggingface.co/your-model-name) |  
 **Demos**:
-[🚀Personalized Conversations About Images with RC-MLLM-7B](https://huggingface.co/spaces/weihongliang/Personalized-VQA) | [🚀Celebrity Recognition and VQA](https://huggingface.co/spaces/weihongliang/RCMLLM)
+[🚀Personalized Conversations About Images](https://huggingface.co/spaces/weihongliang/Personalized-VQA) | [🚀Celebrity Recognition and VQA](https://huggingface.co/spaces/weihongliang/RCMLLM)  
+
+## Abstrct
+Despite significant progress, existing research on Multimodal Large Language Models (MLLMs) mainly focuses on general visual understanding, overlooking the ability to integrate textual context associated with objects for a more context-aware multimodal understanding — an ability we refer to as Region-level Context-aware Multimodal Understanding (RCMU). To address this limitation, we first formulate the RCMU task, which requires models to respond to user instructions by integrating both image content and textual information of regions or objects. To equip MLLMs with RCMU capabilities, we propose Region-level Context-aware Visual Instruction Tuning (RCVIT), which incorporates object information into the model
+input and enables the model to utilize bounding box coordinates to effectively associate objects’ visual content with their textual information. To address the lack of datasets, we introduce the RCMU dataset, a large-scale visual instruction tuning dataset that covers multiple RCMU tasks. We also propose RC&P-Bench, a comprehensive benchmark that can evaluate the performance of MLLMs in RCMU and multimodal personalized understanding tasks. Additionally, we propose a reference-free evaluation metric to perform a comprehensive and fine-grained evaluation of the region-level context-aware image descriptions. By performing RCVIT on Qwen2-VL models with the RCMU dataset, we developed RC-Qwen2-VL models. Experimental results indicate that RC-Qwen2-VL models not only achieve outstanding performance on multiple RCMU tasks but also demonstrate successful applications in multimodal RAG and personalized conversation.
